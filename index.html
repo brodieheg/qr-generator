@@ -40,7 +40,9 @@
 
             html2canvas(container, {
                 backgroundColor: null, 
-                scale: 2 
+                width: 1024,
+                height: 1024,
+                scale: 1
             }).then(canvas => {
                 const link = document.createElement("a");
                 link.download = "qr_code.png";
